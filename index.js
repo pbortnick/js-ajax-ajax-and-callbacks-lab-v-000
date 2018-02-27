@@ -1,6 +1,6 @@
 function searchRepositories() {
     var searchTerms = $("#searchTerms").val()
-    var url = "https://api.github.com/search/repositories?q=" + searchTerms
+    var url = `https://api.github.com/search/repositories?q=${searchTerms}`
     $.get(url, function(data) {
        $("#results").html(renderResults(data));
     }).fail(function(error) {
