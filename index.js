@@ -13,7 +13,6 @@ function searchRepositories() {
 
 function renderResults(data) {
     data.forEach(function(r) {
-        debugger
     return '<ul>' +
         (`<li>
             <h2>Name: ${r.name}</a></h2>
