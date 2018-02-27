@@ -12,7 +12,6 @@ function searchRepositories() {
 
 
 function renderResults(data) {
-    // debugger
     data.forEach(function(r) {
         debugger
     return '<ul>' +
