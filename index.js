@@ -4,7 +4,6 @@ function searchRepositories() {
     $.get(url, function(data) {
        $("#results").html(renderResults(data));
     }).fail(function(error) {
-      // This is called when an error occurs
       console.log('Something went wrong: ' + error);
     });
 }
